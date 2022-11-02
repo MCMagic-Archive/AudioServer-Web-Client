@@ -1,0 +1,485 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+    background-attachment: fixed;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none;
+}
+
+* {
+    -webkit-transition: background-color 300ms ease-out;
+    -moz-transition: background-color 300ms ease-out;
+    -o-transition: background-color 300ms ease-out;
+    -ms-transition: background-color 300ms ease-out;
+    transition: background-color 300ms ease-out;
+}
+
+.shadowBox {
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
+}
+
+.invisible {
+    position: absolute;
+    opacity: 0.01;
+    top: -8000px;
+}
+
+
+/*--------------------
+    Topbar
+--------------------*/
+
+#topbar {
+    position: fixed;
+    width: 100%;
+    background-color: #6699ff;
+    color: #e2e2e2;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+#topbar > div {
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    vertical-align: middle;
+}
+
+#topbar .pageTitle {
+    font-weight: 700;
+    font-size: 1.3em;
+}
+
+#clientVersion {
+    float: right;
+    font-style: italic;
+}
+
+#topbar .parentTitle {
+    color: #ffaa00;
+}
+
+#craftventureLogo {
+    max-height: 16px;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+
+/*--------------------
+    Input
+--------------------*/
+
+button {
+    background-color: #bbb;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 2px;
+    color: white;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #000;
+}
+
+input[type=text],
+input[type=password] {
+    border: none;
+    border-bottom: 1px solid #000000;
+    outline: none;
+    width: 100%;
+    padding: 3px;
+    margin: 3px;
+}
+
+
+/*--------------------
+    Input placeholder
+--------------------*/
+
+::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #929292;
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #929292;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #929292;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #929292;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    margin: 7.5px 0;
+    width: 100%;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 0px 0px 0px #222222, 0px 0px 0px #2f2f2f;
+    background: #efefef;
+    border-radius: 0px;
+    border: 0px solid #000000;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    box-shadow: 1px 1px 1px #111111, 0px 0px 1px #1e1e1e;
+    border: 1px solid #ffffff;
+    height: 15px;
+    width: 15px;
+    border-radius: 200px;
+    background: #efefef;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -2.5px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #efefef;
+}
+
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 0px 0px 0px #222222, 0px 0px 0px #2f2f2f;
+    background: #efefef;
+    border-radius: 0px;
+    border: 0px solid #000000;
+}
+
+input[type=range]::-moz-range-thumb {
+    box-shadow: 1px 1px 1px #111111, 0px 0px 1px #1e1e1e;
+    border: 1px solid #ffffff;
+    height: 15px;
+    width: 15px;
+    border-radius: 200px;
+    background: #efefef;
+    cursor: pointer;
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    border-width: 15px 0;
+    color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+    background: #efefef;
+    border: 0px solid #000000;
+    border-radius: 0px;
+    box-shadow: 0px 0px 0px #222222, 0px 0px 0px #2f2f2f;
+}
+
+input[type=range]::-ms-fill-upper {
+    background: #efefef;
+    border: 0px solid #000000;
+    border-radius: 0px;
+    box-shadow: 0px 0px 0px #222222, 0px 0px 0px #2f2f2f;
+}
+
+input[type=range]::-ms-thumb {
+    box-shadow: 1px 1px 1px #111111, 0px 0px 1px #1e1e1e;
+    border: 1px solid #ffffff;
+    height: 15px;
+    width: 15px;
+    border-radius: 200px;
+    background: #efefef;
+    cursor: pointer;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+    background: #efefef;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+    background: #efefef;
+}
+
+
+/*--------------------
+    Modal box
+--------------------*/
+
+.modalBox {
+    -webkit-user-select: none;
+    /* Chrome all / Safari all */
+    -moz-user-select: none;
+    /* Firefox all */
+    -ms-user-select: none;
+    /* IE 10+ */
+    /* No support for these yet, use at own risk */
+    -o-user-select: none;
+    user-select: none;
+    display: none;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.4);
+    -webkit-transition: opacity 300ms ease-in;
+    -moz-transition: opacity 300ms ease-in;
+    -ms-transition: opacity 300ms ease-in;
+    -o-transition: opacity 300ms ease-in;
+    transition: opacity 300ms ease-in;
+}
+
+.modalBoxContentHolder {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: -400px;
+    margin: auto;
+    border-radius: 2px;
+    background-color: white;
+    padding: 15px;
+    width: 500px;
+    -webkit-transition: top 500ms ease-in-out;
+    -moz-transition: top 500ms ease-in-out;
+    -ms-transition: top 500ms ease-in-out;
+    -o-transition: top 500ms ease-in-out;
+    transition: top 500ms ease-in-out;
+}
+
+.modalBoxContentHolder .title {
+    font-weight: 700;
+    font-size: 1.3em;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.modalBoxContentHolder .modelBoxContent {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.modalboxcontentholder .modalBoxButtons {
+    right: 0;
+}
+
+.modalBoxContentHolder .modelBoxChecklist {
+    list-style: none;
+    padding-left: 0;
+    color: #bbb;
+}
+
+.modalBoxContentHolder .modelBoxChecklist .checked {
+    color: #00aa00;
+    font-weight: 700;
+}
+
+.modalBoxContentHolder .modelBoxChecklist li:before {
+    content: "\25A1\00a0";
+    /*â–¡*/
+}
+
+.modalBoxContentHolder .modelBoxChecklist li.checked:before {
+    content: "\25A0\00a0";
+    /*â– */
+}
+
+#disconnectReason {
+    font-weight: 400;
+    color: #aa0000;
+}
+
+
+/*--------------------
+    Deck grid
+--------------------*/
+
+#content {
+    padding: 10px;
+    padding-top: 105px;
+}
+
+.card {
+    border-radius: 3px;
+    margin: 1px;
+    width: 70%;
+    text-align: center;
+    overflow: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
+    background-color: #ffffff;
+}
+
+.card > div > h1,
+.card > div > h2,
+.card > div > h3,
+.card > div > h4,
+.card > div > h5,
+.card > div > h6,
+.card > div > p {
+    padding: 0;
+    padding-bottom: 5px;
+    margin: 0;
+}
+
+.card:after {
+    clear: both;
+}
+
+.card.wmedium {
+    width: 250px;
+}
+
+.card.wlarge {
+    width: 500px;
+}
+
+.card.hmedium {
+    height: 250px;
+}
+
+.card.hlarge {
+    height: 500px;
+}
+
+.card > div {
+    padding: 12px;
+}
+
+
+/*--------------------
+    Card content
+--------------------*/
+
+#volumeControl {
+    font-weight: 700;
+}
+
+#volumeslider {
+    width: 100%;
+    margin: 0;
+}
+
+.card.image {
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+
+/*--------------------
+    Spinner
+--------------------*/
+
+.spinner {
+    width: 7em;
+    margin: 3em auto;
+}
+
+.spinner div {
+    width: 7em;
+    height: 1em;
+    margin: 3em auto;
+    padding: 3em 0;
+    position: relative;
+    border-radius: 50%;
+    border: 2px solid #2f416f;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    -webkit-animation: rotate 1s ease infinite;
+    -moz-animation: rotate 1s ease infinite;
+    -o-animation: rotate 1s ease infinite;
+    animation: rotate 1s ease infinite;
+}
+
+.spinner:before {
+    position: absolute;
+    color: #8AC63F;
+    font: .9em sans-serif;
+    width: 8em;
+    line-height: 8em;
+    text-align: center;
+    -webkit-animation: wink 1.4s ease infinite;
+}
+
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@-moz-keyframes rotate {
+    0% {
+        -moz-transform: rotate(360deg)
+    }
+}
+
+@-o-keyframes rotate {
+    0% {
+        -o-transform: rotate(360deg)
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(360deg)
+    }
+}
+
+@-webkit-keyframes wink {
+    50% {
+        opacity: 0
+    }
+}
+
+@-moz-keyframes wink {
+    50% {
+        opacity: 0
+    }
+}
+
+@-o-keyframes wink {
+    50% {
+        opacity: 0
+    }
+}
+
+@keyframes wink {
+    50% {
+        opacity: 0
+    }
+}
